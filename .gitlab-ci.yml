@@ -1,20 +1,17 @@
-name: Tests
+"""Simple calculator module."""
 
-on:
-  pull_request:
-    branches: [ main ]
+def add(a, b):
+    """Return sum of two numbers."""
+    return a + b
 
-jobs:
-  test:
-    runs-on: ubuntu-latest
+def sub(a, b):
+    """Return difference of two numbers."""
+    return a - b
 
-    steps:
-      - uses: actions/checkout@v4
+def mul(a, b):
+    """Return multiplication of two numbers."""
+    return a * b
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
-
-      - run: pip install pytest
-
-      - run: pytest
+def div(a, b):
+    """Return division of two numbers."""
+    return a / b
