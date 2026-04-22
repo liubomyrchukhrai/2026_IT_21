@@ -1,0 +1,17 @@
+"""Simple calculator module."""
+
+def add(a, b):
+    """Return sum of two numbers."""
+    return a + b
+
+def sub(a, b):
+    """Return difference of two numbers."""
+    return a - b
+
+def mul(a, b):
+    """Return multiplication of two numbers."""
+    return a * b
+
+def div(a, b):
+    """Return division of two numbers."""
+    return a / b
