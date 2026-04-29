@@ -20,7 +20,9 @@ def divide(a, b):
     if b == 0:
         return "Не можна ділити на 0"
     return a / b
+
 if __name__== "__main__":
+
     print("Оберіть операцію: +, -, *, /,**")
     operation = input("Введіть операцію: ")
     
