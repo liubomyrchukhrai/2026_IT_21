@@ -11,6 +11,14 @@ def multiply(a, b):
     """Multiply two numbers"""
     return a * b
 
+def log(a, base=10):
+    """Log one number"""
+    if a <= 0:
+        raise ValueError("Log undefined for non-positive numbers")
+    if base <= 0 or base == 1:
+        raise ValueError("Invalid base")
+    return math.log(a, base)
+
 def square(a,b):
     """Square two numbers"""
     return a ** b
@@ -23,7 +31,7 @@ def divide(a, b):
 
 if __name__== "__main__":
 
-    print("Оберіть операцію: +, -, *, /,**")
+    print("Оберіть операцію: +, -, *, /,**, log")
     operation = input("Введіть операцію: ")
     
     num1 = float(input("Введіть перше число: "))
@@ -39,5 +47,7 @@ if __name__== "__main__":
         print("Результат:", divide(num1, num2))
     elif operation == "**":
         print("Результат:", square(num1,num2))
+    elif operation == "log":
+        print("Результат:", log(num1))
     else:
         print("Невідома операція")
