@@ -21,7 +21,7 @@ def divide(a, b):
         return "Не можна ділити на 0"
     return a / b
 
-print("Оберіть операцію: +, -, *, /")
+print("Оберіть операцію: +, -, *, /,**")
 operation = input("Введіть операцію: ")
 
 num1 = float(input("Введіть перше число: "))
