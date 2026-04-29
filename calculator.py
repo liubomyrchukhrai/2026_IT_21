@@ -33,3 +33,12 @@ elif operation == "/":
     print("Результат:", divide(num1, num2))
 else:
     print("Невідома операція")
+
+import math
+
+def log(a, base=10):
+    if a <= 0:
+        raise ValueError("Log undefined for non-positive numbers")
+    if base <= 0 or base == 1:
+        raise ValueError("Invalid base")
+    return math.log(a, base)
